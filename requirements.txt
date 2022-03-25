@@ -1,0 +1,1 @@
+investing-algorithm-framework==0.18.0
