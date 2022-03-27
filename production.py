@@ -44,7 +44,7 @@ if __name__ == "__main__":
     trading_symbol = "USDT"
 
     client = Client()
-    client.config.API_KEY = "9Lco7s6fMNO6qILTABeAG01xtnAVSDOjlWzWxF1Sl8BmDGxASNrDgETH4uzC4BXh"
+    client.config.API_KEY = "your_api_key"
     client.start()
 
     # BTCUSDT = pd.read_csv(

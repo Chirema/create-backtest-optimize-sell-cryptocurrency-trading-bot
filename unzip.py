@@ -75,5 +75,5 @@ if __name__ == '__main__':
         raise Exception(
             f"'{directory}' is not a directory. "
             f"Use this command if you follow the tutorial "
-            f"'python3 unzip.py data/spot/monthly/klines/BNBBUSD/1w'"
+            f"'python3 unzip.py data/spot/monthly/klines/BTCUSDT/1d'"
         )
