@@ -27,5 +27,7 @@ if __name__ == "__main__":
         BTCUSDT, SmaCross, commission=.002, exclusive_orders=True, cash=100000
     )
 
-    bt.run()
+    output = bt.run()
     bt.plot()
+
+    print(output)
