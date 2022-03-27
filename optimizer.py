@@ -45,11 +45,11 @@ if __name__ == "__main__":
         return_heatmap=True,
         return_optimization=True)
 
-    _ = plot_objective(optimize_result, n_points=10)
+    _ = plot_objective(optimize_result, n_points=100)
 
-    print(heatmap.sort_values().iloc[-3:])
-    print(heatmap.sort_values().iloc[-1:])
-    print(heatmap.sort_values().iloc[-1:].index)
+    # print(heatmap.sort_values().iloc[-3:])
+    # print(heatmap.sort_values().iloc[-1:])
+    # print(heatmap.sort_values().iloc[-1:].index)
 
     # n1
     print(heatmap.sort_values().iloc[-1:].index.get_level_values('n1')[0])
