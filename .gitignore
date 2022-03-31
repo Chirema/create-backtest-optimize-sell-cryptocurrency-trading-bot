@@ -138,4 +138,8 @@ dmypy.json
 # Pyre type checker
 .pyre/
 
+#/data/*
+#/test/*
+#/clean/*
+
 *.sqlite3

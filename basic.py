@@ -22,10 +22,11 @@ if __name__ == "__main__":
             elif crossover(self.ma2, self.ma1) and self.position.pl > 0:
                 self.sell()
 
+    print(BTCUSDT.columns)
 
-    bt = Backtest(
-        BTCUSDT, SmaCross, commission=.002, exclusive_orders=True, cash=100000
-    )
-
-    bt.run()
-    bt.plot()
+    # bt = Backtest(
+    #     BTCUSDT, SmaCross, commission=.002, exclusive_orders=True, cash=100000
+    # )
+    #
+    # bt.run()
+    # bt.plot()
