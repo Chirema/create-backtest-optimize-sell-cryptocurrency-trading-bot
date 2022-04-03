@@ -10,7 +10,7 @@ import pandas as pd
 import numpy as np
 
 
-OUTPUT_DIR = 'result'
+OUTPUT_DIR = '../result'
 
 
 def visualise(df):
@@ -79,7 +79,7 @@ def run_btcusdt():
 def backtest(ma1, ma2):
 
     BTCUSDT = pd.read_csv(
-        'clean/data-spot-monthly-klines-BTCUSDT-1d',
+        '../clean/data-spot-monthly-klines-BTCUSDT-1d',
         index_col=0, parse_dates=True, infer_datetime_format=True
     )
 
