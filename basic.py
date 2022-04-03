@@ -3,6 +3,11 @@ from backtesting import Backtest, Strategy
 from backtesting.lib import crossover
 from backtesting.test import SMA
 
+BTCUSDT = pd.read_csv(
+    'clean/data-spot-monthly-klines-BTCUSDT-1d',
+    index_col=0, parse_dates=True, infer_datetime_format=True
+)
+
 
 class SmaCross(Strategy):
     def init(self):
@@ -16,11 +21,6 @@ class SmaCross(Strategy):
         elif crossover(self.ma2, self.ma1) and self.position.pl > 0:
             self.sell()
 
-
-BTCUSDT = pd.read_csv(
-    'clean/data-spot-monthly-klines-BTCUSDT-1d',
-    index_col=0, parse_dates=True, infer_datetime_format=True
-)
 
 if __name__ == "__main__":
 
