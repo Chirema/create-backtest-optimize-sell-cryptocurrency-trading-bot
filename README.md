@@ -1,4 +1,4 @@
-#How to create, backtest, optimize and sell a cryptocurrency trading bot 
+# How to create, backtest, optimize and sell a cryptocurrency trading bot 
 
 This is the repository for a series of medium articles ["How to create, backtest, optimize and sell a cryptocurrency trading bot"](https://medium.com/p/21e0ec3abdcf):
 * Part 1: ["Create and backtest a trading bot"](https://medium.com/p/21e0ec3abdcf)
