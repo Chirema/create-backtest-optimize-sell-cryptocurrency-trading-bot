@@ -1,6 +1,10 @@
 #How to create, backtest, optimize and sell a cryptocurrency trading bot 
 
-This is the repository for the medium articles ["How to create, backtest, optimize and sell a cryptocurrency trading bot"](https://medium.com/p/21e0ec3abdcf).
+This is the repository for a series of medium articles ["How to create, backtest, optimize and sell a cryptocurrency trading bot"](https://medium.com/p/21e0ec3abdcf):
+* Part 1: ["Create and backtest a trading bot"](https://medium.com/p/21e0ec3abdcf)
+* Part 2: ["Optimize your trading bot"](https://medium.com/@jibbe.verhave/how-to-create-backtest-optimize-and-sell-a-cryptocurrency-trading-bot-2-4-75f5afef1f05)
+* Part 3: Deploy your trading bot (_coming soon_)
+* Part 4: Monetize your trading bot (_coming soon_)
 
 ## Getting Started
 Make sure that you install all the requirements of the project and download 
@@ -9,14 +13,19 @@ all the training data for the testing and optimization of your trading bot.
 ### Installing the dependencies
 `pip install -r requirements.txt`
 
-### Downloading Binance OHLCV data
 
-`python download-kline.py`
+## Part 1: Create and backtest your trading bot
+Read the medium article: ["How to create and backtest your trading bot"](https://medium.com/p/21e0ec3abdcf).
 
-## Creating a trading bot
-This part belongs to the following medium article: ["How to create, backtest, optimize and sell a cryptocurrency trading bot (1/4)"](https://medium.com/p/21e0ec3abdcf).
+### Tutorial Data
+Use `python3 download-kline.py -s BTCUSDT -i 1d -y 2021 2020 2019
+` to download the tutorial data.
 
-### Running with arguments
+### Future use
+You can use `python download-kline.py` with the arguments below, 
+to download any data you want for your trading bot.
+
+
 | Argument        | Explanation |         
 | --------------- | ---------------- |
 | -h              | show help messages| 
@@ -37,10 +46,12 @@ e.g download ETHUSDT BTCUSDT BNBBUSD kline of 1 week interval from year 2020, mo
 e.g. download ETHUSDT kline from 2020-01-01 to 2021-02-02 to directory /Users/bob/Binance:<br/>
 `python3 download-kline.py -s ETHUSDT -startDate 2020-01-01 -endDate 2021-02-02 -folder '/Users/bob/Binance'`
 
-## Optimizing the test trading bot
+## Part 2: Optimize your trading bot
+Read the medium article: ["How to backtest your trading bot"](https://medium.com/@jibbe.verhave/how-to-create-backtest-optimize-and-sell-a-cryptocurrency-trading-bot-2-4-75f5afef1f05).
 
-## Making your trading bot production ready
-This part belongs to the following medium article: ["How to create, backtest, optimize and sell a cryptocurrency trading bot (3/4)"](https://medium.com/p/21e0ec3abdcf).
+
+## Part 3: Deploy your trading bot 
+Read the medium article: _coming soon_.
 
 For a production read trading bot production we use the [investing algorithm framework](https://investing-algorithm-framework.com).
 The trading bot uses trading data from BINANCE and also has 
@@ -133,7 +144,8 @@ be found at the location:
 ```
 
 
-## Sharing and selling your trading bot on ELTYER
+## Part 4: Sharing and monetizing your trading bot on ELTYER
+Read the medium article: _coming soon_.
 
 
 ## Authors
