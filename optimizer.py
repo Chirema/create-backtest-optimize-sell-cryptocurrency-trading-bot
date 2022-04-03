@@ -45,7 +45,7 @@ if __name__ == "__main__":
         return_heatmap=True,
         return_optimization=True)
 
-    _ = plot_objective(optimize_result, n_points=100)
+    _ = plot_objective(optimize_result, n_points=10)
 
     # print(heatmap.sort_values().iloc[-3:])
     # print(heatmap.sort_values().iloc[-1:])

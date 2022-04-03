@@ -24,9 +24,12 @@ if __name__ == "__main__":
 
     print(BTCUSDT.columns)
 
-    # bt = Backtest(
-    #     BTCUSDT, SmaCross, commission=.002, exclusive_orders=True, cash=100000
-    # )
-    #
-    # bt.run()
-    # bt.plot()
+
+    bt = Backtest(
+        BTCUSDT, SmaCross, commission=.002, exclusive_orders=True, cash=100000
+    )
+
+    output = bt.run()
+    bt.plot()
+
+    print(output)
