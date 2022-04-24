@@ -4,25 +4,16 @@ from logging import getLogger
 import pandas as pd
 from backtesting.lib import crossover
 from backtesting.test import SMA
-from investing_algorithm_framework import App, AlgorithmContext, OHLCV, Ticker
+from eltyer_investing_algorithm_framework import create_app
+from investing_algorithm_framework import AlgorithmContext, OHLCV, Ticker
 
 logger = getLogger(__name__)
 
-app = App(
+app = create_app(
     resource_directory=os.path.abspath(
         os.path.join(os.path.realpath(__file__), os.pardir)
     ),
-    config={
-        "PORTFOLIOS": {
-            "PRODUCTION_PORTFOLIO": {
-                "API_KEY": "<YOUR_API_KEY>",
-                "SECRET_KEY": "<YOUR_SECRET_KEY>",
-                "TRADING_SYMBOL": "USDT",
-                "MARKET": "BINANCE",
-                "SQLITE": False
-            }
-        }
-    }
+    key="<YOUR_ELTYER_TRADING_BOT_API_KEY>",
 )
 
 
@@ -85,5 +76,5 @@ def perform_strategy(context: AlgorithmContext, ticker: Ticker, ohlcv: OHLCV):
 
 if __name__ == "__main__":
     # Run the trading bot
-    app.start()
+    app.start(stateless=True)
 
