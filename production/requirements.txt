@@ -1,0 +1,4 @@
+investing-algorithm-framework==0.18.5
+eltyer-investing-algorithm-framework==0.4.3
+pandas==1.4.1
+backtesting==0.3.3
