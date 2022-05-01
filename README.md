@@ -126,21 +126,21 @@ app = App(
 The production ready trading bot made with the [backtesting framework](https://pypi.org/project/Backtesting/) can 
 be found at the location:
 ```shell
-/production/backtesting_framework
+/03-production/backtesting_framework
 ```
 
 #### Starting the trading bot
 You can start the trading bot by running:
 
 ```shell
-python  production/backtesting_framework/main.py
+python  03-production/backtesting_framework/main.py
 ```
 
 ### Production ready trading bot with own metrics
 The production ready trading bot made with self-made metrics can 
 be found at the location:
 ```shell
-/production/base
+/03-production/base
 ```
 
 
